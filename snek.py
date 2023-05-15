@@ -63,6 +63,7 @@ def main(stdscr):
             game_win.addch(tail[0], tail[1], ' ')
 
         game_win.addch(snake[0][0], snake[0][1], '#') 
+        game_win.addstr(0, game_width // 2 - 3, 'score: {}'.format(score))
     
     stdscr.clear()
     stdscr.addstr(game_height // 2, game_width // 2,
